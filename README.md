@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+  # Weather-Website-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Weather Web app as an assignment .
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a simple Weather app that fetches real-time weather data for users.
 
-## Expanding the ESLint configuration
+## Project Figma Design 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project is built based on ui design implmented using figma.
+Figma Design Link: https://www.figma.com/design/Xw6bIEDyP58fJZzStiWY3A/Sky-Guard---Task?node-id=0-1&t=Dn8cQkz0EUFFLH0X-1
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Project Implementation Approach
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project is built using react with typescript, which aims to increase the readability and testability of the project and better organization.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+The project includes 1 feature:
+
+1.  **Real Time Weather Fetching:** Handles weather fetching for users by two ways, by current location or by search by city.
+
+
+
+## Tools Used in This Project
+
+* **Functional Components:** Used Functional components for building the ui blocks.
+* **Data Sources:**
+    * **Remote API:** Weather API is used for real-time weather data.
+    * **Package Used:** Used Axios package to fetch the data from API.
+* **Styling:** 
+     * **UI Styling:** The project UI is designed using Tailwind Css.
+     * **Icons:** Used Heroicons Package for website icons.
+
+      
+
+    `
