@@ -151,7 +151,7 @@ function HomePage() {
         {loading && !forecast && (
           <div className="flex justify-center items-center py-20">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-500"></div>
-            <p className="text-white text-xl">Loading weather data...</p>
+            <p className="ml-3 text-white text-xl">Loading weather data...</p>
           </div>
         )}
 
